@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFIT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(./hero-bg.png);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .registration-container {
+            display: flex;
+            background-color: transparent;
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+            overflow: hidden;
+            border-radius: 10px;
+            width: 600px;
+        }
+
+        .left-panel, .right-panel {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .left-panel {
+            background-color: transparent;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right-panel {
+            background-color: transparent;
+            color: white;
+        }
+
+        /* Add this style to make input fields appear as a line */
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 0; /* Remove border-radius to make it look like a line */
+            background-color: transparent; /* Make background transparent */
+            outline: none; /* Remove input outline on focus */
+            color: white;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="registration-container">
+        <div class="left-panel">
+            <h2>Personal Information</h2>
+            <form>
+                
+                <div class="contact-options">
+                    <div class="address">
+                        <p>KEN Famicom International Traders</p>
+                        <p>A108 Adam Street,<br>New York, NY 535022</p>
+                        <p>+1 437 5663380</p>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+        <div class="right-panel">
+            <h2>Additional Information</h2>
+            <div class="address">
+                        
+                <p>email-admin@kfitinternational.com</p>
+                <p>Website- www.kfitinternational.com</p>
+            </div>
+            <a href="support.html"><button type="submit">Support</button></a>
+            <a href="index.html"><button type="submit">Back to Home</button></a>
+        </div>
+    </div>
+
+</body>
+</html>
